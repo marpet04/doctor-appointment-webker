@@ -1,0 +1,17 @@
+mat-card {
+    width: 50vw;
+    height: 50vh;
+}
+
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: stretch;
+}
+
+mat-form-field {
+    width: 90%;
+    margin-left: 15px;
+    padding: 10px;
+}

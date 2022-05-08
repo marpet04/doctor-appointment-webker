@@ -1,0 +1,31 @@
+<mat-card class="centering">
+    <form [formGroup] = "addAppointmentForm">
+        <h2>Időpontfoglalás</h2>
+        <mat-form-field>
+            <mat-label for="id">Időpontfoglalás azonosítója: </mat-label>
+            <input matInput type="text" formControlName="id" readonly />
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label for="patient_id">Páciens azonosító: </mat-label>
+            <input matInput type="text" formControlName="user_id" readonly />
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label for="doctor_id">Kezelőorvos: </mat-label>
+            <input matInput type="text" formControlName="doctor_id" readonly/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label for="appointment">Lefoglalandó időpont: </mat-label>
+            <input matInput [ngxMatDatetimePicker]="picker" formControlName="appointment">
+            <mat-datepicker-toggle [for]="$any(picker)"></mat-datepicker-toggle>
+            <ngx-mat-datetime-picker #picker></ngx-mat-datetime-picker>
+        </mat-form-field>
+        <br/>
+        <span>
+            <button mat-raised-button color="primary" class="max-width" type="submit" [mat-dialog-close]="addAppointmentForm.value">LEADÁS</button>
+            <button mat-button color="primary" class="max-width" (click)="dialogRef.close()" >MÉGSEM</button>
+        </span>
+    </form>
+</mat-card>

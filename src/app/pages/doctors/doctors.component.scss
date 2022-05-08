@@ -1,0 +1,12 @@
+mat-card {
+    flex: 1;
+    min-width: 300px;
+    min-height: 200px;
+    margin: 4px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}

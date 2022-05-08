@@ -1,0 +1,36 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+
+span {
+    padding: 5px 5px 5px 5px;
+}
+
+mat-form-field {
+    width: 140%;
+    align-self: center;
+}
+
+div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+}
+
+mat-card {
+    min-height: 400px;
+    min-width: 600px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

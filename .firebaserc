@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "doctor-appointment-webker": {
+      "hosting": {
+        "doctor-appointment": [
+          "doctor-appointment-webker"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "doctor-appointment-webker"
+  }
+}

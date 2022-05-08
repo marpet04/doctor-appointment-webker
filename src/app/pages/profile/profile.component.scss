@@ -1,0 +1,24 @@
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: stretch;
+  }
+
+mat-card {
+    width: 40vw;
+}
+
+mat-form-field {
+    width: 90%;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 60%;
+}

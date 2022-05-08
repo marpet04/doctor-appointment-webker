@@ -1,0 +1,19 @@
+div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    text-align: center;
+    height: 50vh;
+}
+
+mat-card {
+    min-height: 200px;
+    min-width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}

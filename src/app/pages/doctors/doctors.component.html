@@ -1,0 +1,20 @@
+<h1>Válaszd ki, melyik orvoshoz szeretnél időpontot kérni!</h1>
+      <div class="card">
+        <mat-card *ngFor="let doctor of doctors">
+            <mat-card-header>
+              <mat-card-title>{{doctor.name}}</mat-card-title>
+              <mat-card-subtitle> Orvosazonosító: {{doctor.doctor_id}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <div *ngIf="doctor.birthDate">Születési év: {{doctor.birthDate}}</div>
+                <div>Telefonszám: {{doctor.phonenumber}}</div>
+            </mat-card-content>
+            <div *ngIf="role == 'patient'">
+            <mat-card-actions align="end">
+                <button mat-button (click)="openDialog(doctor.doctor_id)">
+                    <mat-icon>event_note</mat-icon>
+                </button>
+            </mat-card-actions>
+          </div>
+          </mat-card>
+    </div>

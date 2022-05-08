@@ -1,0 +1,46 @@
+<!--<div>
+<mat-toolbar color="primary">
+        <mat-toolbar-row class="nav">
+            <button mat-button style="font-size: medium;" [routerLink]="['/registration']">
+                Regisztráció&nbsp;
+            </button>
+            <a mat-button style="font-size: medium;" [routerLink]="['/login']">
+                Bejelentkezés&nbsp;
+            </a>
+            <a mat-button style="font-size: medium;" (click)="logout()">
+                Kijelentkezés&nbsp;
+            </a>
+          </mat-toolbar-row>
+</mat-toolbar>
+</div>-->
+
+<mat-toolbar fxLayout="row" color="primary">
+    <mat-toolbar-row>
+      <a mat-button [routerLink]="['/home']">
+        Dr. Time
+      </a>
+      <span style="flex: 1 1;"></span>
+      <a mat-button [routerLink]="['/home/my-appointments']">
+        Időpontjaim
+      </a>
+      <span style="flex: 1 1;"></span>
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>arrow_drop_down</mat-icon>
+      </button>
+  
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/home/profile']">
+          <mat-icon>person</mat-icon>
+          <span>Profil</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item (click)="logout()">
+          <mat-icon>arrow_back</mat-icon>
+          <span>Kijelentkezés</span>
+        </button>
+      </mat-menu>
+  
+    </mat-toolbar-row>
+  
+  </mat-toolbar>
+
